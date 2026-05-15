@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import * as bootstrap from 'bootstrap';
+// Supports weights 200-800
+import '@fontsource-variable/plus-jakarta-sans/wght.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

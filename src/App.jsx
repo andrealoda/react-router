@@ -10,8 +10,10 @@ function App() {
         <Routes>
           <Route element={<DefaultLayout />}>
 
-          <Route path="/" element={<HomePage />} />
-         
+            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<ChiSiamo />} />
+            <Route path="/" element={<Prodotti />} />
+
           </Route>
         </Routes>
       </BrowserRouter>

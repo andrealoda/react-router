@@ -1,0 +1,27 @@
+@import url('bootstrap');
+@import url('bootstrap-icons');
+
+:root {
+    /* Brand Colors */
+    --color-primary-purple: #7B2CBF;
+    --color-primary-pink: #FF007A;
+    --color-text-dark: #2D0066;
+
+    /* Gradient */
+    --brand-gradient: linear-gradient(135deg, #7B2CBF 0%, #FF007A 100%);
+
+    /* Neutral Colors for UI */
+    --color-bg-light: #F8F7FF;
+    --color-text-body: #4A4E69;
+    --color-white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans Variable', sans-serif;
+}

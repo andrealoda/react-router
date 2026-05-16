@@ -13,13 +13,19 @@ export default function AppHeader() {
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/">Home</NavLink>
+                                    <NavLink className={({ isActive }) =>
+                                        isActive ? "text-white" : "text-black"
+                                    } to="/">Home</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/ChiSiamo">Chi Siamo</NavLink>
+                                    <NavLink className={({ isActive }) =>
+                                        isActive ? "text-white" : "text-black"
+                                    } to="/ChiSiamo">Chi Siamo</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/Prodotti">Prodotti</NavLink>
+                                    <NavLink className={({ isActive }) =>
+                                        isActive ? "text-white" : "text-black"
+                                    } to="/Prodotti">Prodotti</NavLink>
                                 </li>
                             </ul>
                         </div>

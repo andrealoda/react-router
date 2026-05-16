@@ -4,8 +4,8 @@ export default function AppFooter() {
 
     return (
         <>
-            <footer className="text-center bg-body-tertiary position mt-auto">
-                <div className="container pt-4">
+            <footer className="text-center position mt-auto">
+                <div className="container pt-1">
                     <section className="mb-4">
                         <Link className="btn btn-floating btn-lg m-1" to="/" role="button">
                         <div>Home</div>

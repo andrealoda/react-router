@@ -4,8 +4,8 @@ export default function AppHeader() {
 
     return (
         <>
-            <header>
-                <nav className="navbar navbar-expand-lg bg-text-body">
+            <header className="header-positioning">
+                <nav className="navbar navbar-expand-lg mb-2 glass-card">
                     <div className="container-fluid">
                         <a className="btn navbar-brand" href="/">
                             <img src="../src/assets/gigghy-logo.svg" alt="Gigghy Shop" width="30" height="24"></img>

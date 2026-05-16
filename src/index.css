@@ -22,26 +22,145 @@
     box-sizing: border-box;
 }
 
-.bg-primary-purple { background-color: var(--color-primary-purple) !important; }
-.bg-primary-pink { background-color: var(--color-primary-pink) !important; }
-.bg-text-dark { background-color: var(--color-text-dark) !important; }
-.bg-light-custom { background-color: var(--color-bg-light) !important; }
-.bg-text-body { background-color: var(--color-text-body) !important; }
-.bg-white-custom { background-color: var(--color-white) !important; }
+.bg-primary-purple {
+    background-color: var(--color-primary-purple) !important;
+}
+
+.bg-primary-pink {
+    background-color: var(--color-primary-pink) !important;
+}
+
+.bg-text-dark {
+    background-color: var(--color-text-dark) !important;
+}
+
+.bg-light-custom {
+    background-color: var(--color-bg-light) !important;
+}
+
+.bg-text-body {
+    background-color: var(--color-text-body) !important;
+}
+
+.bg-white-custom {
+    background-color: var(--color-white) !important;
+}
 
 /* Gradient */
-.bg-brand-gradient { background: var(--brand-gradient) !important; }
+.bg-brand-gradient {
+    background: var(--brand-gradient) !important;
+}
 
-.text-primary-purple { color: var(--color-primary-purple) !important; }
-.text-primary-pink { color: var(--color-primary-pink) !important; }
-.text-dark-custom { color: var(--color-text-dark) !important; }
-.text-body-custom { color: var(--color-text-body) !important; }
-.text-light-custom { color: var(--color-bg-light) !important; }
-.text-white-custom { color: var(--color-white) !important; }
+.text-primary-purple {
+    color: var(--color-primary-purple) !important;
+}
+
+.text-primary-pink {
+    color: var(--color-primary-pink) !important;
+}
+
+.text-dark-custom {
+    color: var(--color-text-dark) !important;
+}
+
+.text-body-custom {
+    color: var(--color-text-body) !important;
+}
+
+.text-light-custom {
+    color: var(--color-bg-light) !important;
+}
+
+.text-white-custom {
+    color: var(--color-white) !important;
+}
 
 
 
 body {
     font-family: 'Plus Jakarta Sans Variable', sans-serif;
     font-family: 'Inter Variable', sans-serif;
+    background-image: linear-gradient(135deg, #7B2CBF 0%, #FF007A 100%);
+    background-size: cover;
+}
+
+/* Header */
+
+.header-positioning {
+    position: fixed;
+    top: 10px;
+    z-index: 999;
+    width: 98%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+/* Sidebar */
+
+.sidebar-fixed {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+    width: 200px;
+    height: 80vh;
+
+    border: 1px solid var(--color-text-dark);
+    border-radius: 20px;
+    /* margin-top: 70px; */
+    overflow-y: auto;
+    z-index: 999;
+}
+
+/* Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.25s;
+}
+
+.sidebar-menu a:hover {
+    background: #f7f7f7;
+    color: #7B2CBF;
+    /* tuo colore brand */
+}
+
+
+
+/* GLASS CARD */
+.glass-card {
+    background: rgba(255, 255, 255, 0.5);
+    /* Sfondo quasi invisibile */
+    backdrop-filter: blur(10px);
+    /* Sfocatura dello sfondo */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Bordo sottile "luce" */
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    /* Ombra morbida */
+}
+
+/* Products Wrapper */
+
+.main-wrapper {
+    width: 75vw;
+    margin: 100px auto;
+    /* border: 1px solid var(--color-text-body); */
+
 }

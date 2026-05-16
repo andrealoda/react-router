@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import AppSidebar from "../components/AppSidebar"
 
 
 export default function Prodotti() {
@@ -23,26 +24,28 @@ export default function Prodotti() {
     return (
 
         <>
-            <main>
-                <div>
-                    <div className="row  d-flex justify-content-center gap-3">
 
-                {products.map(product => (
-                    <div className="card" style={{width: "18rem"}} key={product.id}>
-                        <img src={product.image} className="card-img-top" alt="Product image" />
+            <AppSidebar />
 
-                            <div className="card-body">
-                                <h5 className="card-title">{product.title}</h5>
-                                <p className="card-text text-muted">Categoria: {product.category}</p>
-                                <p className="fw-bold mb-3">${product.price}</p>
+                <div className="main-wrapper">
+                    <div className="row d-flex justify-content-between gap-3 left">
 
-                                <a href="#" className="btn btn-primary w-100">Acquista</a>
+                        {products.map(product => (
+                            <div className="card rounded-5 bg-light-custom" style={{ width: "350px" }} key={product.id}>
+                                <img src={product.image} className="card-img-top p-3" alt="Product image" />
+
+                                <div className="card-body d-flex flex-column">
+                                    <h5 className="card-title">{product.title}</h5>
+                                    <p className="card-text text-muted">Categoria: {product.category}</p>
+                                    <p className="fw-bold mb-3">${product.price}</p>
+
+                                    <a href="#" className="btn bg-brand-gradient text-white w-100 mt-auto">Acquista</a>
+                                </div>
                             </div>
-                    </div>
-                ))}
+                        ))}
                     </div>
                 </div>
-            </main>
+
         </>
 
     )

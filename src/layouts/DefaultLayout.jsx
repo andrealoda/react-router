@@ -7,11 +7,17 @@ export default function DefaultLayouts() {
 
     return (
         <>
-            <AppHeader />
+    <div className="d-flex flex-column min-vh-100">
 
-            <Outlet />
+      <AppHeader />
 
-            <AppFooter />
+      <main className="flex-fill">
+        <Outlet />
+      </main>
+
+      <AppFooter />
+
+    </div>
         </>
 
 

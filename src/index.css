@@ -22,6 +22,25 @@
     box-sizing: border-box;
 }
 
+.bg-primary-purple { background-color: var(--color-primary-purple) !important; }
+.bg-primary-pink { background-color: var(--color-primary-pink) !important; }
+.bg-text-dark { background-color: var(--color-text-dark) !important; }
+.bg-light-custom { background-color: var(--color-bg-light) !important; }
+.bg-text-body { background-color: var(--color-text-body) !important; }
+.bg-white-custom { background-color: var(--color-white) !important; }
+
+/* Gradient */
+.bg-brand-gradient { background: var(--brand-gradient) !important; }
+
+.text-primary-purple { color: var(--color-primary-purple) !important; }
+.text-primary-pink { color: var(--color-primary-pink) !important; }
+.text-dark-custom { color: var(--color-text-dark) !important; }
+.text-body-custom { color: var(--color-text-body) !important; }
+.text-light-custom { color: var(--color-bg-light) !important; }
+.text-white-custom { color: var(--color-white) !important; }
+
+
+
 body {
     font-family: 'Plus Jakarta Sans Variable', sans-serif;
     font-family: 'Inter Variable', sans-serif;

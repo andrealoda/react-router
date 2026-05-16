@@ -1,4 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import DefaultLayout from "./layouts/DefaultLayout"
+import HomePage from "./pages/HomePage"
+import ChiSiamo from "./pages/ChiSiamo"
+import Prodotti from "./pages/Prodotti"
 
 
 function App() {
@@ -11,8 +15,8 @@ function App() {
           <Route element={<DefaultLayout />}>
 
             <Route path="/" element={<HomePage />} />
-            <Route path="/" element={<ChiSiamo />} />
-            <Route path="/" element={<Prodotti />} />
+            <Route path="/ChiSiamo" element={<ChiSiamo />} />
+            <Route path="/Prodotti" element={<Prodotti />} />
 
           </Route>
         </Routes>

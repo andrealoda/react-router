@@ -12,10 +12,10 @@ export default function AppFooter() {
                         
                         </Link>
                         <Link className="btn btn-floating btn-lg m-1" to="/ChiSiamo" role="button">
-                        <div>Features</div>
+                        <div>Chi Siamo</div>
                         </Link>
                         <Link className="btn btn-floating btn-lg m-1" to="/Prodotti" role="button">
-                        <div>Pricing</div>
+                        <div>Prodotti</div>
                         </Link>
                     </section >
                 </div >

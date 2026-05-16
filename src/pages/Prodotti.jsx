@@ -24,13 +24,24 @@ export default function Prodotti() {
 
         <>
             <main>
+                <div>
+                    <div className="row  d-flex justify-content-center gap-3">
+
                 {products.map(product => (
-                    <div key={product.id}>
-                        <h2>{product.title}</h2>
-                        <p>Price: ${product.price}</p>
-                        <p>Category: {product.category}</p>
+                    <div className="card" style={{width: "18rem"}} key={product.id}>
+                        <img src={product.image} className="card-img-top" alt="Product image" />
+
+                            <div className="card-body">
+                                <h5 className="card-title">{product.title}</h5>
+                                <p className="card-text text-muted">Categoria: {product.category}</p>
+                                <p className="fw-bold mb-3">${product.price}</p>
+
+                                <a href="#" className="btn btn-primary w-100">Acquista</a>
+                            </div>
                     </div>
                 ))}
+                    </div>
+                </div>
             </main>
         </>
 

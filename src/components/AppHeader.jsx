@@ -10,8 +10,8 @@ export default function AppHeader() {
                         <a className="btn navbar-brand" href="/">
                             <img src="../src/assets/gigghy-logo.svg" alt="Gigghy Shop" width="30" height="24"></img>
                         </a>
-                        <div className="collapse navbar-collapse" id="navbarNav">
-                            <ul className="navbar-nav">
+                        <div className="collapse navbar-collapse " id="navbarNav">
+                            <ul className="navbar-nav gap-3">
                                 <li className="nav-item">
                                     <NavLink className={({ isActive }) =>
                                         isActive ? "text-white" : "text-black"
